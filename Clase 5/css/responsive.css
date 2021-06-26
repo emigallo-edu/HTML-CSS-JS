@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+
+/* [class*="col-"] {
+    width: 100%;
+} */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    body {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* Para escritorio: */
+    .col-s-1 {
+        width: 50%;
+    }
+    .col-s-2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Para escritorio: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+div {
+    background-color: teal;
+    float: left;
+    padding: 5px;
+    height: 4em;
+}
+
+.tomato {
+    background-color: tomato;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="styles/jquery-efects.css" rel="stylesheet">
+
+    <!-- CSS and JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <button id="buttonFade" class="btn btn-primary">fadeToggle</button>
+        </div>
+        <div class="row">
+            <div id="div1">1</div>
+            <div id="div2">2</div>
+            <div id="div3">3</div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <div style="height: 500px; background-color: lightgray;">
+            <button id="buttonMoveLeft">izquierda</button>
+            <button id="buttonMoveRight">derecha</button>
+            <div id="divAnimated" style="background:#98bf21; height:100px; width:100px; position:absolute;">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div id="slide" class="classTest">Click para abrir/cerrar el panel</div>
+        <div id="panel" class="classTest">Click para detener</div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $("#buttonFade").click(function() {
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(3000);
+        });
+
+
+        var elements = document.getElementsByClassName("classTest");
+        console.log(elements[0]);
+
+        // closed
+        // open
+        var slideStatus = "closed";
+        var duration = 2000;
+
+        function setSlideStatus(status) {
+            slideStatus = status;
+            console.log(status);
+        }
+
+        $("#slide").click(function() {
+
+            if (slideStatus == "closed") {
+                $("#panel").slideDown(duration,
+                    function() {
+                        setSlideStatus("opened");
+                    });
+            }
+
+            if (slideStatus == "opened") {
+                $("#panel").slideUp(duration,
+                    function() {
+                        setSlideStatus("closed")
+                    });
+            }
+        });
+
+        $("#panel").click(function() {
+            $("#panel").stop();
+        });
+
+
+        $("#buttonMoveRight").click(function() {
+            $("#divAnimated").animate({
+                left: '250px'
+            });
+        });
+
+        $("#buttonMoveLeft").click(function() {
+            $("#divAnimated").animate({
+                left: '0px'
+            });
+        });
+    });
+</script>
+
+</html>

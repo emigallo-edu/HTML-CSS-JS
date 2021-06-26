@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 10px;
+        }
+        
+        nav {
+            background-color: green;
+        }
+        
+        section {
+            width: 25%;
+            margin: 20px;
+            height: 300px;
+        }
+        
+        .container {
+            text-align: center;
+            /* necesario para la class .center */
+        }
+        
+        .container:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .left {
+            float: left;
+            background-color: red;
+        }
+        
+        .center {
+            display: inline-block;
+            background-color: orange;
+        }
+        
+        .right {
+            float: right;
+            background-color: pink;
+        }
+        
+        footer {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Navbar</nav>
+    <main class="container">
+        <section class="left">Section</section>
+        <section class="center">Section</section>
+        <section class="right">Section</section>
+    </main>
+    <footer>Footer</footer>
+</body>
+
+</html>

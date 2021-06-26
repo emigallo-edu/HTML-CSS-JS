@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Ingrese usuario y contraseña</h2>
+        <div>
+            <label>Usuario</label>
+            <input id="user" type="text">
+        </div>
+        <div>
+            <label>Contraseña</label>
+            <input id="pass" type="password">
+        </div>
+        <div>
+            <button onclick="login(document.getElementById('user').value, document.getElementById('pass').value)">Ingresar</button>
+        </div>
+    </div>
+</body>
+
+</html>

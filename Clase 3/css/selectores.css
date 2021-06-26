@@ -1,0 +1,43 @@
+* {
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+div div {
+    width: 100%;
+    min-height: 200px;
+    background-color: lightcoral;
+    margin: 2px;
+}
+
+h1 {
+    color: lightgreen;
+    text-align: center;
+}
+
+.subtitlte {
+    color: maroon;
+}
+
+#subtitle2 {
+    color: mediumpurple;
+    text-align: right;
+}
+
+div div div h1 {
+    color: orange;
+}
+
+div p {
+    color: navy;
+    text-align: left;
+}
+
+h1~p {
+    color: plum;
+    font-weight: bold;
+}

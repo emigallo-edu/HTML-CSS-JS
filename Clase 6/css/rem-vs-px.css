@@ -1,0 +1,55 @@
+html {
+    font-size: 20px;
+}
+
+div {
+    background-color: tomato;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+.div-px {
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 40px;
+    }
+    div {
+        background-color: coral;
+    }
+    .div-px {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    html {
+        font-size: 60px;
+    }
+    div {
+        background-color: coral;
+    }
+    .div-px {
+        font-size: 120px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    html {
+        font-size: 80px;
+    }
+    div {
+        background-color: coral;
+    }
+    .div-px {
+        font-size: 160px;
+    }
+}
+
+.div-rem {
+    font-size: 2rem;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/images.css">
+    <style>
+        .imagen-graysacale:hover {
+            filter: grayscale(80%);
+        }
+        
+        .div-hover {
+            background-color: white;
+            height: 150px;
+            width: 150px;
+            background-image: url('quiet.jpg');
+        }
+        
+        .div-hover:hover {
+            background-image: url('moving.gif');
+        }
+    </style>
+</head>
+
+<body>
+    <img src="imagen.jpg" class="image">
+
+    <br>
+    <br>
+
+    <h1>Usando la propiedad <i>maxi-width:100%</i> hacemos que la imagen se vea en su tamaño original</h1>
+    <img src="imagen.jpg" class="imagen-graysacale image-max-width">
+    <img src="https://cdn.pixabay.com/photo/2016/04/25/18/03/kingfisher-1352520_1280.jpg" class="imagen-graysacale image-max-width">
+    <br>
+    <br>
+    <div class="div-hover">
+    </div>
+</body>
+
+</html>

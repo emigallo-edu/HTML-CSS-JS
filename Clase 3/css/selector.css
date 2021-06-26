@@ -1,0 +1,28 @@
+* {
+    color: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+#subtitle {
+    color: red;
+}
+
+.subtitle2 {
+    text-align: right;
+}
+
+.green {
+    color: green;
+}
+
+div div h1 {
+    color: orange;
+}
+
+h1~p {
+    color: plum;
+    font-weight: bold;
+}

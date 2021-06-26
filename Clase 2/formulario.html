@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <h2 style="margin: 5px;">Label</h2>
+        <div style="background-color: coral; padding: 10px; margin: 5px 5px 20px 5px;">
+            <label>Hagamos un formulario!</label><br>
+        </div>
+
+        <h2 style="margin: 5px;">Input</h2>
+        <div style="background-color: coral; padding: 10px; margin: 5px 5px 20px 5px;">
+            <label>Nombre y apellido</label><br>
+            <input type="text">
+        </div>
+
+        <h2 style="margin: 5px;">Select drop-down list</h2>
+        <div style="background-color: coral; padding: 10px; margin: 5px 5px 20px 5px;">
+            <label>Selecciona un auto:</label>
+            <select style="width: 100px;">
+                <option>Volvo</option>
+                <option>Saab</option>
+                <option>Fiat</option>
+                <option>Audi</option>
+            </select>
+        </div>
+
+        <h2 style="margin: 5px;">Select drop-down list visible</h2>
+        <div style="background-color: coral; padding: 10px; margin: 5px 5px 20px 5px;">
+            <label for="cars">Selecciona un auto:</label>
+            <select id="cars" name="cars" size="4">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+
+        <h2 style="margin: 5px;">Selector múltiple</h2>
+        <div style="background-color: coral; padding: 10px; margin: 5px 5px 20px 5px;">
+            <label for="cars">Selecciona varios autos:</label>
+            <select id="cars" name="cars" size="4" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+
+        <h2 style="margin: 5px;">Area de texto</h2>
+        <div style="background-color: coral; padding: 10px; margin: 5px 5px 20px 5px;">
+            <textarea name="message" rows="10" cols="30">
+            </textarea>
+        </div>
+
+        <input type="button" value="Guardar">
+
+    </form>
+</body>
+
+</html>

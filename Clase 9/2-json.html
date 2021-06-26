@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button onclick="convertToJson()">Convertir a JSON</button>
+    <button onclick="convertFromJson()">Convertir desde JSON</button>
+</body>
+
+<script>
+    var user1 = {
+        user: "usuario",
+        pass: "1234",
+        lastLogin: "23/08/2020",
+        name: "Emiliano Gallo"
+    };
+
+    var user2 = {
+        user: "usuario 2",
+        pass: "1234",
+        lastLogin: "23/08/2020",
+        name: "Juan Perez"
+    };
+
+    var user3 = {
+        user: "usuario 3",
+        pass: "1234",
+        lastLogin: "23/08/2020",
+        name: "Rodolfo Acosta"
+    };
+
+    var list = [user1, user2, user3];
+
+    function convertToJson() {
+        var obj = JSON.stringify(user1);
+        console.log(obj);
+
+        var list = JSON.stringify(this.list);
+        console.log(list);
+    }
+
+    var json = '[{"user":"usuario","pass":"1234","lastLogin":"23/08/2020","name":"Emiliano Gallo"},{"user":"usuario 2","pass":"1234","lastLogin":"23/08/2020","name":"Juan Perez"},{"user":"usuario 3","pass":"1234","lastLogin":"23/08/2020","name":"Rodolfo Acosta"}]';
+
+    function convertFromJson() {
+        var obj = JSON.parse(json);
+        console.log(obj);
+    }
+</script>
+
+</html>

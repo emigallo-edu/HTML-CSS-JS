@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/index.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function helloHead() {
+            alert("hola Emiliano desde el 'head'");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Llamando a funciones de JS desde diferentes ubicaciones</h1>
+    <button onclick="helloHead()">Llamar a la función en head</button>
+    <button onclick="helloBody('Emiliano')">Llamar a la función en body</button>
+    <button onclick="helloExternal('Emiliano')">Llamar a la función en archivo externo</button>
+
+    <h1>Scrollear con JS</h1>
+    <button onclick="scrollSite()">Scroll</button>
+
+    <h1>Sumando valores</h1>
+    <input type="number" id="number1"> +
+    <input type="number" id="number2">
+    <button onclick="sum('number1', 'number2', 'result')">Sumar</button>
+    <input type="text" id="result" readonly>
+
+    <h1>Impresión</h1>
+    <button onclick="window.print()">Imprimir doc</button>
+
+    <h1>Sentencia 'if'</h1>
+    <label>Ingresá tu edad</label>
+    <input type="text" id="age">
+    <button onclick="showImage(document.getElementById('age').value)">Mostrar imagen</button>
+    <br>
+    <img id="imgByAge" width="300">
+
+    <h1>Sentencia 'switch'</h1>
+    <labe>Elegí tu fruta favorita</labe>
+    <select style="width: 100px;" id="fruit">
+        <option>Banana</option>
+        <option>Manzana</option>
+        <option>Pera</option>
+    </select>
+
+    <button onclick="showFruit(document.getElementById('fruit').value)">Mostrar imagen</button>
+    <br>
+    <img id="imgFruit" width="300">
+
+    <h1>Sentencia 'switch'</h1>
+    <labe>Ingresá el día para saber si es laborable</labe>
+    <select style="width: 100px;" id="days">
+        <option>Lunes</option>
+        <option>Martes</option>
+        <option>Miércoles</option>
+        <option>Jueves</option>
+        <option>Viernes</option>
+        <option>Sábado</option>
+        <option>Domingo</option>
+    </select>
+
+    <button onclick="isHoliday(document.getElementById('days').value)">Mostrar imagen</button>
+
+    <h1>Sentencia 'for'</h1>
+    <labe>Cuantas veces querés que aparezca el alert?</labe>
+    <input type="text" id="alertRepeat">
+    <button onclick="showAlert(document.getElementById('alertRepeat').value)">Mostrar alert</button>
+    <hidden id="hidden"></hidden>
+    <h1>Cambiando la 'class' de una etiqueta</h1>
+    <labe>De qué color querés que sea el rectángulo?</labe>
+    <button onclick="changeClass('red border-black')">Rojo</button>
+    <button onclick="changeClass('blue border-coral')">Azul</button>
+    <button onclick="changeClass('yellow border-green')">Amarillo</button>
+    <button onclick="changeClass('parametro1', document.getElementById('hidden').value)">Amarillo</button>
+
+    <div id="square" class="default"></div>
+
+    <script>
+        function helloBody(name) {
+            alert("hola " + name + " desde el 'body'");
+        }
+
+        function scrollSite() {
+            window.scroll({
+                top: 1000,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

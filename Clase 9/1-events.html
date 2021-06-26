@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 10px;
+        }
+        
+        .squareYellow {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .lightgray {
+            background-color: lightgray;
+        }
+        
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>Ingresá el ancho y alto que querés que tenga el rectángulo</label>
+        <div>
+            <label>Ancho (px)</label>
+            <input id="width" type="text">
+        </div>
+        <div>
+            <label>Alto (px)</label>
+            <input id="height" type="text">
+        </div>
+        <div>
+            <button id="button">Aplicar</button>
+            <button id="toogleSquare">Mostrar/ocultar rectángulo</button>
+        </div>
+        <div id="square" class="squareYellow">
+            Caja
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        // alert("Documento cargado");
+        $("#button").css("background-color", "lightgray");
+    });
+
+    $("#button").click(function() {
+        $("#square").width($("#width").val());
+        $("#square").height($("#height").val());
+    });
+
+    $("#button").mouseenter(function() {
+        $("#button").css("background-color", "lightgreen");
+    });
+
+    $("#button").mouseleave(function() {
+        $("#button").css("background-color", "lightgray");
+    });
+
+    $("#toogleSquare").click(function() {
+        // if ($("#square").is(':visible')) {
+        //     $("#square").hide();
+        // } else {
+        //     $("#square").show();
+        // }
+        $("#square").toggleClass("hidden");
+    });
+</script>
+
+</html>
