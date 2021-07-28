@@ -20,14 +20,11 @@ function showImage(age) {
 function showFruit(fruta) {
     switch (fruta) {
         case 'Banana':
-
-
-        case 'Manzana':
             document.getElementById('imgFruit').src = "https://media.istockphoto.com/photos/banana-picture-id1184345169?b=1&k=6&m=1184345169&s=170667a&w=0&h=MIwKWVPVU300uo70dDgXWngCVLhnY6AaAbpwbJSPXMg=";
             break;
-            // case 'Manzana':
-            // document.getElementById('imgFruit').src = "https://media.istockphoto.com/photos/red-apple-picture-id184276818?b=1&k=6&m=184276818&s=170667a&w=0&h=Tpx9Uf0l5RZsaHY2cfP3RyT4Vo5INyavYdprAKzOiFY=";
-            // break;
+        case 'Manzana':
+            document.getElementById('imgFruit').src = "https://media.istockphoto.com/photos/red-apple-picture-id184276818?b=1&k=6&m=184276818&s=170667a&w=0&h=Tpx9Uf0l5RZsaHY2cfP3RyT4Vo5INyavYdprAKzOiFY=";
+            break;
         case 'Pera':
             document.getElementById('imgFruit').src = "https://media.istockphoto.com/photos/single-pear-picture-id164142758?b=1&k=6&m=164142758&s=170667a&w=0&h=v2hYZ9iMWL9xeUei7w-47JTIQFSYKG5XwAAbejDHLOk=";
             break;
