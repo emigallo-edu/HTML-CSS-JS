@@ -20,6 +20,12 @@ function login(user, pass) {
     }
 }
 
+// if (user == "" || pass == "") {
+//     // Devolvemos error
+// } else {
+//     // Validamos el ingreso
+// }
+
 var balance = 155;
 
 var accountList = [{ date: "25/08/2020", type: "Compra por internet", amount: -100, balance: 0 },
