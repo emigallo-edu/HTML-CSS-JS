@@ -1,0 +1,34 @@
+ * {
+            padding: 10px;
+        }
+        
+        nav {
+            background-color: green;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: right;
+        }
+        
+        section {
+            width: 25%;
+            margin: 20px;
+            height: 300px;
+        }
+        
+        .left {
+            background-color: red;
+        }
+        
+        .center {
+            background-color: orange;
+        }
+        
+        .right {
+            background-color: pink;
+        }
+        
+        footer {
+            background-color: blue;
+        }

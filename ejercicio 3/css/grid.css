@@ -1,0 +1,34 @@
+ * {
+            padding: 10px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-rows: 100%;
+        }
+        
+        nav {
+            background-color: green;
+        }
+        
+        section {
+            margin: 20px;
+            height: 300px;
+        }
+        
+        .left {
+            background-color: red;
+        }
+        
+        .center {
+            background-color: orange;
+        }
+        
+        .right {
+            background-color: pink;
+        }
+        
+        footer {
+            background-color: blue;
+        }

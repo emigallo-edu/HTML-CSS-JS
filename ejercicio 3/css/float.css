@@ -1,0 +1,43 @@
+* {
+            padding: 10px;
+        }
+        
+        nav {
+            background-color: green;
+        }
+        
+        section {
+            width: 25%;
+            margin: 20px;
+            height: 300px;
+        }
+        
+        .container {
+            text-align: center;
+            /* necesario para la class .center */
+        }
+        
+        .container:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .left {
+            float: left;
+            background-color: red;
+        }
+        
+        .center {
+            display: inline-block;
+            background-color: orange;
+        }
+        
+        .right {
+            float: right;
+            background-color: pink;
+        }
+        
+        footer {
+            background-color: blue;
+        }
